@@ -831,10 +831,17 @@ a:hover {
 
 .about-mf .about-img {
   margin-bottom: 2rem;
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .about-mf .about-img img {
-  margin-left: 10px;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 0 auto; /* Center the image */
 }
 
 @media (min-width: 767px) {
